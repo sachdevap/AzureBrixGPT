@@ -168,7 +168,8 @@ export const SystemPrompt: FC<Props> = ({
 
   useEffect(() => {
     if (conversation.prompt) {
-      setValue(conversation.prompt);
+      //setValue(conversation.prompt);
+      setValue(DEFAULT_SYSTEM_PROMPT)
     } else {
       setValue(DEFAULT_SYSTEM_PROMPT);
     }

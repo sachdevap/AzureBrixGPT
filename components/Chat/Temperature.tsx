@@ -24,7 +24,8 @@ export const TemperatureSlider: FC<Props> = ({
   );
   const { t } = useTranslation('chat');
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = parseFloat(event.target.value);
+    //const newValue = parseFloat(event.target.value);
+    const newValue = DEFAULT_TEMPERATURE;
     setTemperature(newValue);
     onChangeTemperature(newValue);
   };

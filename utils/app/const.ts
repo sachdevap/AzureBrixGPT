@@ -1,18 +1,18 @@
 export const DEFAULT_SYSTEM_PROMPT =
   process.env.NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT ||
-  "You are ChatGPT, a large language model trained by OpenAI. Follow the user's instructions carefully. Respond using markdown.";
+  "You are AzureBrix, a large language model trained by OpenAI. You must restrict your responses to talk about the learning paths available in Azure and Databricks. You must restrict any questions that are outside the domain of azure and Databricks. You can guide the user by giving steps to direct them towards a solution, however, must not give them the solution directly and in entirety. Respond using markdown";
 
 export const OPENAI_API_HOST =
   process.env.OPENAI_API_HOST || 'https://api.openai.com';
 
 export const DEFAULT_TEMPERATURE = 
-  parseFloat(process.env.NEXT_PUBLIC_DEFAULT_TEMPERATURE || "1");
+  parseFloat(process.env.NEXT_PUBLIC_DEFAULT_TEMPERATURE || "0");
 
 export const OPENAI_API_TYPE =
   process.env.OPENAI_API_TYPE || 'openai';
 
 export const OPENAI_API_VERSION =
-  process.env.OPENAI_API_VERSION || '2023-03-15-preview';
+  process.env.OPENAI_API_VERSION || '2023-03-23-preview';
 
 export const OPENAI_ORGANIZATION =
   process.env.OPENAI_ORGANIZATION || '';
